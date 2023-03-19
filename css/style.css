@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-style: normal;
 }
 
 html {
@@ -30,7 +31,43 @@ img {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
   margin: 0 auto;
+}
+
+/* TOP-BLOGS */
+
+.top-blogs {
+  width: 50%;
+  height: 762px;
+  max-width: 600px;
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-blogs-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.top-blogs-btn {
+  width: 164px;
+  height: 48px;
+  padding: 12px 24px;
+  background-color: #1e90ff;
+  border: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
