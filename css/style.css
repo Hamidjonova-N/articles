@@ -26,26 +26,43 @@ img {
   height: auto;
 }
 
-/* CONTAINER */
+/* MAIN-CONTENT */
 
-.container {
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* GLOBAL-WRAPPER */
+
+.global-wrapper {
   width: 100%;
   max-width: 1200px;
+  max-height: 864px;
+  flex-grow: 1;
   margin: 0 auto;
+  display: flex;
 }
 
 /* TOP-BLOGS */
 
 .top-blogs {
-  width: 50%;
-  height: 762px;
+  width: 100%;
   max-width: 600px;
-  background-image: url("/img/background.png");
+  background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.top-blogs-content {
+  max-width: 285px;
 }
 
 .top-blogs-heading {
@@ -70,4 +87,34 @@ img {
   line-height: 24px;
   letter-spacing: 2px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.top-blogs-btn:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+
+.top-blogs-btn:active {
+  background-color: rgba(30, 144, 255, 0.6);
+}
+
+.top-blogs-btn-icon {
+  width: 20px;
+  height: 19px;
+}
+
+/* RETINA-BACKGROUND */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .top-blogs {
+    background-image: url("/img/background@2x.jpg");
+  }
 }
