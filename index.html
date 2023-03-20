@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sayohat</title>
-    <!-- Stylesheets -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Font -->
+    <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular"
       rel="stylesheet"
@@ -21,6 +21,7 @@
   <body>
     <main class="main-content">
       <div class="global-wrapper">
+        <!-- TOP-BLOGS -->
         <div class="top-blogs">
           <section class="top-blogs-content">
             <h1 class="top-blogs-heading">
@@ -43,11 +44,68 @@
             </button>
           </section>
         </div>
+
+        <!-- NEW-VIDEOS -->
         <div class="new-videos">
           <h2 class="new-videos-heading">Eng so'nggi videolar</h2>
-          <section>
-            <img src="img/article-poster-1.png" alt="" />
-          </section>
+          <hr class="new-videos-hr" />
+          <ul class="new-videos-list">
+            <li class="new-videos-item">
+              <img
+                class="new-videos-img"
+                src="img/article-poster-1.jpg"
+                srcset="
+                  img/article-poster-1.jpg    1x,
+                  img/article-poster-1@2x.jpg 2x
+                "
+                alt=""
+              />
+              <div class="new-videos-content">
+                <h3 class="new-videos-content-title">
+                  <a class="new-videos-content-link" href="#"
+                    >O'rmonda uchburchaksimon uy qurdik</a
+                  >
+                </h3>
+              </div>
+            </li>
+            <li class="new-videos-item">
+              <img
+                class="new-videos-img"
+                src="img/article-poster-2.jpg"
+                srcset="
+                  img/article-poster-2.jpg    1x,
+                  img/article-poster-2@2x.jpg 2x
+                "
+                alt=""
+              />
+              <div class="new-videos-content">
+                <h3 class="new-videos-content-title">
+                  <a class="new-videos-content-link" href="#"
+                    >Sibirliklarning qoldirib ketilgan uychalari</a
+                  >
+                </h3>
+              </div>
+            </li>
+            <li class="new-videos-item">
+              <img
+                class="new-videos-img"
+                src="img/article-poster-3.jpg"
+                srcset="
+                  img/article-poster-3.jpg    1x,
+                  img/article-poster-3@2x.jpg 2x
+                "
+                alt=""
+              />
+              <div class="new-videos-content">
+                <h3 class="new-videos-content-title">
+                  <a class="new-videos-content-link" href="#"
+                    >Yer-uyida mallarang kuchugim bilan tunab qoldik</a
+                  >
+                </h3>
+              </div>
+            </li>
+          </ul>
+          <button class="new-videos-btn">YANA YUKLASH</button>
         </div>
       </div>
     </main>
